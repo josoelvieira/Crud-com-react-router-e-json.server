@@ -5,12 +5,16 @@ import Nav from '../components/template/Nav'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
-import Home from '../components/home/home'
+import { HashRouter } from 'react-router-dom'
+import Routes from './Routes'
+
 
 export default props =>
+    <HashRouter>   
         <div className='app'>
             <Logo/>
             <Nav/>
-            <Home/>
+            <Routes/>
             <Footer/>
         </div>
+        </HashRouter>
